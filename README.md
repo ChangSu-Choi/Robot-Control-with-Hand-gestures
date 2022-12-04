@@ -42,14 +42,14 @@ $pip install traitlets
 **Step 7 -  Open and follow robot_control_with_hand_gestures.ipynb notebook**
 
 ## Issues
-if you got TLS block issue when import the sklearn in ipynb, add this
+If you got TLS block issue when import the sklearn in ipynb, add this
 ```python
 import os
 os.environ['LD_PRELOAD']
 ```
 
 ## Customize
-moving the Robot in real world you should have to change the parameters of Robot movements  for adaptable real world
+Moving the Robot in real world you should have to change the parameters of Robot movements  for adaptable real world
 ```python
 if gesture_joints == 1: # stop
     robot.stop()
