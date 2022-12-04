@@ -13,24 +13,24 @@ https://github.com/NVIDIA-AI-IOT/trt_pose_hand
 **Step 1 - Download PyTorch and Torchvision for Jetson nano. [link](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)**   
 **Step 2 - Install [torch2trt](https://github.com/NVIDIA-AI-IOT/torch2trt)**
 ```
-git clone https://github.com/NVIDIA-AI-IOT/torch2trt
-cd torch2trt
-sudo python3 setup.py install --plugins
+$git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+$cd torch2trt
+$sudo python3 setup.py install --plugins
 ```
 **Step 3 - Install other miscellaneous packages**
 ```
-sudo pip3 install tqdm cython pycocotools
-sudo apt-get install python3-matplotlib
+$sudo pip3 install tqdm cython pycocotools
+$sudo apt-get install python3-matplotlib
 ```
 **Step 4 - Install trt_poses**
 ```
-git clone https://github.com/NVIDIA-AI-IOT/trt_pose
-cd trt_pose
-sudo python3 setup.py install
+$git clone https://github.com/NVIDIA-AI-IOT/trt_pose
+$cd trt_pose
+$sudo python3 setup.py install
 ```
 **Step 5 - Install dependecies for hand pose**   
 ```
-pip install traitlets
+$pip install traitlets
 ```
 **Step 6 -  Download model weight**
 | Model | Weight |
