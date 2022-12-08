@@ -1,9 +1,16 @@
 # Robot-Control-with-Hand-gestures
-The purpose of this project is to control excavation equipment and forklifts through hand gestures.  
-The project utilized deep learning technology using hand gesture recognition technology and implemented tilt pose using and pytorch.  
-The technologies used in this project were implemented using trt-pose.<br>
-The machine recognizes the following hand movements and performs the following functions.
- <details>
+
+
+This project aims to control excavation equipment and forklifts through hand gestures. The project adapt modern deep learning using hand gesture recognition and implemented tilt pose.
+This project has tested on Jetsno NANO with the following environments:
+ - python 3.6.9
+ - trt_pose 0.0.1
+ - Pytorch 1.0.0a0
+ - sklearn 0.24.2
+ - Jetson Nano Robot library.
+
+The machine recognizes the following hand movements and performs the following functions.  
+<details>
  <summary>Movement</summary>
  <div markdown="1">
   1. Fist = Stop<br>
@@ -13,7 +20,6 @@ The machine recognizes the following hand movements and performs the following f
   5. Okay = Back up<br>
  </div>
  </details>  
- 
  
 ![](imgs/run.gif)
 ![](imgs/backward.jpg)
