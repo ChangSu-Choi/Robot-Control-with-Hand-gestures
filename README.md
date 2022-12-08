@@ -125,7 +125,7 @@ $pip install traitlets
 If you got TLS block issue when import the sklearn in ipynb, add this
 ```python
 import os
-os.environ['LD_PRELOAD']
+os.environ['LD_PRELOAD']='<your sklearn path>/scikit_learn.libs/libgomp-d22c30c5.so.1.0.0'
 ```
 
 ## Customize
