@@ -3,6 +3,68 @@ Robot Control with Hand gestures with Yahboom Jetson Nano AI Robot
 We completed the application using a pretrained model that was completed in advance without independent gesture learning.   
 https://github.com/NVIDIA-AI-IOT/trt_pose_hand
 
+# Topic
+- There are many deaths caused by industrial accidents in construction machinery.
+- It is caused by the lack of visibility of internal workers and the inability to look around.
+- It can be safely operated by checking the field of view through the hand motion detection robot control system from the outside and operating heavy equipment.
+<img src="https://user-images.githubusercontent.com/77065758/206336403-a47f8949-ccc9-41cb-a192-da5e64474d3e.png"  width="200" height="160"/>
+
+
+## Related technology
+- "Samsung Electronics' All-in-One PC" that recognizes hand movements and works
+<img src="https://user-images.githubusercontent.com/77065758/206336409-5f9e5879-4045-40f1-b15a-8c98d7de46c2.jpg"  width="200" height="160"/>
+
+- Amazon AI Secretary Recognizing Sign Language "Alexa"
+<img src="https://user-images.githubusercontent.com/77065758/206336405-0f2eb732-3d89-445a-b0ec-84d9551e9187.png"  width="200" height="160"/>
+
+## Introduction to ideas
+- Recognizing a person's hand movements through a camera
+- Robot control for each movement, and various movements can be customized.
+
+ <details>
+ <summary>Movement</summary>
+ <div markdown="1">
+  1. Fist = Stop<br>
+  2. One finger (finger) = left<br>
+  3. Palm = Go straight<br>
+  4. Two Fingers (V) = Right<br>
+  5. Okay = Back up<br>
+ </div>
+ </details>
+
+### Application of ideas
+- a forklift truck
+ - Basic behavior of forklifts
+<img src="https://user-images.githubusercontent.com/77065758/206336412-f40b8390-aea4-4b23-88b1-cd1d6e1cc2b1.jpg"  width="200" height="160"/>
+  <details>
+  <summary>Movement</summary>
+  <div markdown="1">
+    1. Forward – Backward<br>
+    2. Up – Down<br>
+    3. In front of tilt – back<br>
+  </div>
+  </details>
+		After matching the basic movements of the forklift with the hand movements, the forklift is controlled with the hand movements
+
+- an excavator
+ - How the Excavator Works
+<img src="https://user-images.githubusercontent.com/77065758/206336595-c14de783-47d7-410f-9a50-d5371c5761db.png"  width="200" height="160"/>
+  <details>
+  <summary>Movement</summary>
+  <div markdown="1">
+   1. Boom Cylinder (Up – Down)<br>
+		 2. Handle cylinder (upper – lower)<br>
+		 3. Bucket cylinder (upper – lower)<br>
+  </div>
+  </details>
+		The excavator operates each cylinder. It is complicated to control this with hand gestures. You have to come up with an idea to pump it automatically.
+
+- a companion robot
+ - High-five, stop, and take pictures. You can express various directions
+<img src="https://user-images.githubusercontent.com/77065758/206336401-a56fdcad-7dc5-427c-9a91-fcf9950dbb07.jpg"  width="200" height="160"/>
+ 
+ #### In addition to heavy equipment, I think it can be applied in various ways.
+
 ## Getting Started
 ### Environment
  - python 3.6.9
