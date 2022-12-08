@@ -1,11 +1,30 @@
 # Robot-Control-with-Hand-gestures
-Robot Control with Hand gestures with Yahboom Jetson Nano AI Robot
-We completed the application using a pretrained model that was completed in advance without independent gesture learning.   
-https://github.com/NVIDIA-AI-IOT/trt_pose_hand
+The purpose of this project is to control excavation equipment and forklifts through hand gestures.  
+The project utilized deep learning technology using hand gesture recognition technology and implemented tilt pose using and pytorch.  
+The technologies used in this project were implemented using pytorch, sklearn, and the Jetson library.<br>
+The machine recognizes the following hand movements and performs the following functions.
+ <details>
+ <summary>Movement</summary>
+ <div markdown="1">
+  1. Fist = Stop<br>
+  2. One finger (finger) = left<br>
+  3. Palm = Go straight<br>
+  4. Two Fingers (V) = Right<br>
+  5. Okay = Back up<br>
+ </div>
+ </details>  
+ 
+ 
+![](imgs/run.gif)
+![](imgs/backward.jpg)
+
+# co-workers  
+- [SangHyun Park](https://parkmaker.github.io/)
+- [Jongyeol Na](https://github.com/JongYeolb)
 
 # Topic
-- There are many deaths caused by industrial accidents in construction machinery.
-- It is caused by the lack of visibility of internal workers and the inability to look around.
+- There are many deaths caused by industrial accidents in construction machinery.   
+- It is caused by the lack of visibility of internal workers and the inability to look around.   
 - It can be safely operated by checking the field of view through the hand motion detection robot control system from the outside and operating heavy equipment.
 <img src="https://user-images.githubusercontent.com/77065758/206336403-a47f8949-ccc9-41cb-a192-da5e64474d3e.png"  width="200" height="160"/>
 
@@ -21,16 +40,9 @@ https://github.com/NVIDIA-AI-IOT/trt_pose_hand
 - Recognizing a person's hand movements through a camera
 - Robot control for each movement, and various movements can be customized.
 
- <details>
- <summary>Movement</summary>
- <div markdown="1">
-  1. Fist = Stop<br>
-  2. One finger (finger) = left<br>
-  3. Palm = Go straight<br>
-  4. Two Fingers (V) = Right<br>
-  5. Okay = Back up<br>
- </div>
- </details>
+
+
+
 
 ### Application of ideas
 - a forklift truck
@@ -126,12 +138,6 @@ elif gesture_joints == 5: # backward
 else:
     robot.stop()   
 ```
-
-## Running the tests
-
-![](imgs/run.gif)
-![](imgs/backward.jpg)
-
 
 ## References
 - [JetCam](http://github.com/NVIDIA-AI-IOT/jetcam) - An easy to use Python camera interface for NVIDIA Jetson
