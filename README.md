@@ -144,8 +144,8 @@ elif gesture_joints == 5: # backward
 else:
     robot.stop()   
 ```
-
-<embed src='imgs/NVIDIA-Jetson-AI-Specialist-Certificate-Chang-Su-Choi.pdf' type="application/pdf>
+## Certificate
+<img src="imgs/NVIDIA-Jetson-AI-Specialist-Certificate-Chang-Su-Choi.png" width="500"></img>
 ## References
 - [JetCam](http://github.com/NVIDIA-AI-IOT/jetcam) - An easy to use Python camera interface for NVIDIA Jetson
 - [JetBot](http://github.com/NVIDIA-AI-IOT/jetbot) - An educational AI robot based on NVIDIA Jetson Nano
